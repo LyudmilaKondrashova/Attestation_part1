@@ -9,3 +9,11 @@ def menu():
     "7. Закончить работу")
     choice = int(input())
     return choice
+
+def menu_find():
+    print("\nВыберите необходимое действие:\n"
+    "1. Найти заметку по номеру id\n"
+    "2. Найти заметку по дате\n"
+    "3. Вернуться назад")
+    choice = int(input())
+    return choice

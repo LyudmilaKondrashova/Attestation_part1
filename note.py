@@ -1,3 +1,7 @@
+def get_id():
+    id = int(input('Введите id искомой заметки: '))
+    return id
+
 def get_header():
     header = input('Введите заголовок заметки: ')
     return header
