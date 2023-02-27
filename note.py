@@ -1,15 +1,21 @@
+# Ввод данных заметки
+
+# Ввод id заметки
 def get_id():
     id = int(input('Введите id заметки: '))
     return id
 
+# Ввод заголовка заметки
 def get_header():
     header = input('Введите заголовок заметки: ')
     return header
 
+# Ввод содержимого заметки
 def get_text():
     text = input('Введите содержимое заметки: ')
     return text
 
+# Ввод даты заметки для задачи поиска заметки по дате
 def get_data():
     print('Введите дату заметки:')
     flag = False
@@ -50,6 +56,7 @@ def get_data():
     data = day + '-' + month + '-' + year
     return data
 
+# Фомирование заметки с заданными id, заголовком, содержимым и датой
 def get_note(id, header, text, data):
     new_note = {}
     new_note['id'] = id

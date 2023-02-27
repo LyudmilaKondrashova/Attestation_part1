@@ -1,5 +1,7 @@
+# Операции с файлом заметок
 import json
 
+# Запись в файл для задачи создания новой заметки
 def write_file_json(filelname, note):
     try:
         with open(filelname, encoding='utf-8') as filejson:
@@ -17,13 +19,14 @@ def write_file_json(filelname, note):
     print('Заметка успешно сохранена в файл заметок')
     filejson.close()
 
+# Запись в файл для задачи обновления заметки
 def write_file_json_all_notes(filelname, notes):
     with open(filelname, 'w', encoding='utf-8') as filejson:
         json.dump(notes, filejson, ensure_ascii = False, indent = 2)
-    print('Заметка успешно обновлена в файле заметок')
     filejson.close()
 
-def read_all_notes(filelname, flag_operation):
+# Чтение всех заметок из файла
+def read_all_notes(filelname, flag_operation = False):
     data_note = []
     try:
         with open(filelname, encoding='utf-8') as filejson:
