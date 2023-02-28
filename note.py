@@ -25,6 +25,7 @@ def get_data():
             print('Год введен некорректно! Попробуйте ввести еще раз!')
         else:
             flag = True
+
     flag = False
     while not flag:
         month = input('Введите номер месяца (от 1 до 12): ')
@@ -32,6 +33,7 @@ def get_data():
             print('Месяц введен некорректно! Попробуйте ввести еще раз!')
         else:
             flag = True
+            
     flag = False               
     month30 = [4, 6, 9, 11]
     while not flag:

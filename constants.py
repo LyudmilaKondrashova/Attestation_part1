@@ -1,2 +1,2 @@
 # Модуль констант
-note_file_name = 'notes.json'   # Имя файла записок
+note_file_name = 'notes.json'   # Имя файла заметок

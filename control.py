@@ -42,7 +42,7 @@ def user_choice(us_ch):
             model.print_all_note()
             print('*******************************************')
             button_click()
-        elif us_ch == 5:    # Обновить заметку
+        elif us_ch == 5:    # Редактировать заметку
             model.update_note()
             print('*******************************************')
             button_click()

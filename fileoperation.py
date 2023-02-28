@@ -19,7 +19,7 @@ def write_file_json(filelname, note):
     print('Заметка успешно сохранена в файл заметок')
     filejson.close()
 
-# Запись в файл для задачи обновления заметки
+# Запись в файл для задачи редактирования заметки
 def write_file_json_all_notes(filelname, notes):
     with open(filelname, 'w', encoding='utf-8') as filejson:
         json.dump(notes, filejson, ensure_ascii = False, indent = 2)

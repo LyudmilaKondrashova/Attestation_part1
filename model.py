@@ -104,7 +104,7 @@ def print_all_note():
     notes = fileoperation.read_all_notes(constants.note_file_name, True)
     print_note(notes)
 
-# Обновление заметки с заданным id
+# Редактирование заметки с заданным id
 def update_note():
     notes = fileoperation.read_all_notes(constants.note_file_name, True)
     update_notes = {}
@@ -133,7 +133,7 @@ def update_note():
                 'data': datetime.datetime.now().strftime('%d-%m-%Y %H:%M:%S')
                 })
     fileoperation.write_file_json_all_notes(constants.note_file_name, update_notes)
-    print('Заметка успешно обновлена в файле заметок')
+    print('Заметка успешно отредактирована в файле заметок')
 
 # Удаление заметки с заданным id
 def delete_note():
